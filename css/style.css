@@ -15,8 +15,10 @@ body {
     overflow: hidden;
 }
 .container {
-    width: 1100px;
-    margin: 0px 150px;
+    max-width: 1400px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 150px;
 }
 .content {
     font-size: 16px;
@@ -158,16 +160,14 @@ body {
     border-bottom: 1px solid grey;
 }
 .social-wrapper {
-    display: flex;
     justify-content: space-between;
-    height: 105px;
     box-sizing: border-box;
+    height: 105px;
     padding-top: 20px;
 }
 .social-text {
     display:  inline-block;
     width: 350px;
-    padding-right: 100px;
 }
 .social-text p, h3{
     padding: 0;
@@ -178,6 +178,7 @@ body {
 }
 .social-img {
     display: inline;
+    float: right;
 }
 
 .feature {
@@ -233,7 +234,7 @@ body {
     margin: 0;
     font-size: 14px;
 }
-.feature-download {
+.orange-button {
     width: 120px;
     height: 45px;
     border: none;
@@ -249,7 +250,288 @@ body {
     justify-content: space-between;
     padding-top: 110px;
 }
-.sub-img {
+.sub-wrapper {
+    width: 410px;
+    font-size: 14px;
+}
+.sub-wrapper .span-border {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-sub-header {
+    color: #000;
+}
+.sub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sub-item:first-child {
+    padding-bottom: 35px;
+}
+.sub-item{
+    display: flex;
+    justify-content: space-between;
+}
+.main-sub-copyright {
+    padding-top: 50px;
+}
+.sub-copyright {
+    width: 360px;
+    margin: 0;
+}
+
+.sub-copyright b{
+    color: #000;
+}
+.sub-copyright p{
+    margin: 0;
+    padding-top: 15px;
+}
+
+
+.features-picture {
+    background-color: #f5f5f5;
+    height: 525px;
+}
+.feature-picture-wrapper {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+.feature-picture-copyright {
     display: inline-block;
-    align-items: stretch;
+    width: 480px;   
+    padding-top: 20px; 
+}
+.feature-picture-img {
+    display: inline-block;
+}
+.feature-picture-wrapper .span-border {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.feature-picture-wrapper p {
+    padding: 0px;
+}
+.feature-text-content {
+    padding: 0px;
+}
+
+.process {
+    height: 590px;
+    padding-top: 110px;
+}
+.process-header {
+    text-align: center;
+}
+.process-header .span-border {
+    margin: 30px auto;
+}
+.process-header p {
+    margin: 0;
+}
+.process-header .main-caption {
+    color: #000;
+}
+.process-content {
+    padding-top: 80px;
+}
+.process-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+}
+.process-item {
+    width: 350px;
+    text-align: center;
+}
+.process-item p { 
+    padding: 30px 0;
+    margin: 0;
+}
+.process-item b {
+    color: #000;
+}
+
+.pricing {
+    background-color: #f5f5f5;
+}
+.pricing-header     text-align: center;
+    padding-top: 110px;
+}
+.pricing-header .main-caption{
+    color: #000;
+}
+.pricing-header .span-border{
+    margin: 30px auto;
+}
+.pricing-content {
+    padding-top: 80px;
+    height: 890px;
+}
+.pricing-list {
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-item {
+    width: 340px;
+}
+.pricing-item-header {
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.pricing-item-header h3{
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.pricing-item-header span{
+    font-size: 35px;
+}
+.pricing-item-header b{
+    font-size: 94px;
+}
+.pricing-item-header p{
+    color: rgba(255,255,255, 0.8); 
+    font-style: oblique;
+}
+.uniqueness{
+    background-color: #ff8b38;
+    border: 2px solid #ff8b38;
+    color: #fff;
+}
+.uniqueness p{
+    margin: 0;
+    height: 40px;
+    padding-top: 20px;
+    font-style: normal;
+}
+.pricing-item-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing-item-content li{
+    background-color: #fff;
+    height: 40px;
+    text-align: center;
+    margin-top: 1px; 
+    padding-top: 20px;
+}
+
+
+.reviews-header {
+    text-align: center;
+    padding-top: 110px;
+}
+.reviews-header .main-caption{
+    color: #000;
+    margin: 0;
+}
+.reviews-header .span-border{
+    margin: 30px auto;
+}
+.reviews-header .caption-text{
+    margin: 0;
+}
+.reviews-content {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.reviews-item {
+    width: 275px;
+}
+.reviews-item-content {
+    background-image: url(../img/avatar-content.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 273px;
+    height: 147px;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+}
+.reviews-item-author {
+    display: flex;
+}
+.review-name {
+    display: inline;
+}
+.custom {
+    background-image: url(../img/bg_city_custom.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 320px;
+    color: #fff;
+}
+.custom-wrapper {
+    text-align: center;
+    padding-top: 75px;
+}
+.custom-wrapper .span-border{
+    margin: 0 auto;
+}
+.custom-wrapper .caption-text{
+    color: rgba(255,255,255, 0.6);
+}
+.contacts {
+    height: 610px;
+}
+.contacts-header {
+    padding-top: 110px;
+    text-align: center;
+}
+.contacts-header .span-border{
+    margin: 0 auto;
+}
+
+.contacts-form {
+    display: flex;
+    justify-content: space-between;
+}
+.name-part {
+    width: 530px;
+    box-sizing: border-box;
+}
+.name-part input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #f5f5f5;
+    padding-top: 14px;
+}
+.message-part { 
+    width: 530px;
+    box-sizing: border-box;
+}
+.message-part textarea{ 
+    width: 530px;
+    border: 0;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 10px;
+}
+
+.main-footer{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000;
+    color: rgba(255,255,255, 0.6);
+    height: 80px;
+    padding-top: 25px;
+}
+.contact .orange-button {
+    display: inline;
+    margin: 0 45%;
 }
